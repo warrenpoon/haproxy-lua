@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.5-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/mlaccetti/haproxy-lua/blob/master/Dockerfile)
+-	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/mlaccetti/haproxy-lua/blob/master/Dockerfile)
 
 [![](https://imagelayers.io/badge/mlaccetti/haproxy-lua:latest.svg)](https://imagelayers.io/?images=mlaccetti/haproxy-lua:latest)
 
