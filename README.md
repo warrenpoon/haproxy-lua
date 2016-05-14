@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/mlaccetti/haproxy-lua/blob/master/Dockerfile)
+-	[`1.6.5-alpine`, `1.6-alpine`, `1-alpine`, `alpine` (*1.6/alpine/Dockerfile*)](https://github.com/mlaccetti/haproxy-lua/blob/master/Dockerfile)
 
 [![](https://imagelayers.io/badge/mlaccetti/haproxy-lua:latest.svg)](https://imagelayers.io/?images=mlaccetti/haproxy-lua:latest)
 
@@ -26,7 +26,7 @@ Note: Many configuration examples propose to put `daemon` into the `global` sect
 
 ```dockerfile
 FROM mlaccetti/haproxy-lua:1.6
-COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
+COPY haproxy.cfg /etc/haproxy/haproxy.cfg
 ```
 
 ## Build the container
@@ -38,7 +38,7 @@ $ docker build -t my-haproxy .
 ## Test the configuration file
 
 ```console
-$ docker run -it --rm --name haproxy-syntax-check mlaccetti/haproxy-lua:1.6 haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+$ docker run -it --rm --name haproxy-syntax-check mlaccetti/haproxy-lua:1.6 haproxy -c -f /etc/haproxy/haproxy.cfg
 ```
 
 ## Run the container
